@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, MessageSquare, Phone, Send, ArrowRight, Sparkles } from "lucide-react";
+import { Mail, MessageSquare, Phone, Send, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -18,27 +18,9 @@ export const ContactLayout = () => {
     projectType: "",
     message: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Simulate submission validation
-    if (formData.name && formData.email && formData.message) {
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        businessName: "",
-        email: "",
-        phone: "",
-        projectType: "",
-        message: "",
-      });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }
   };
 
   return (
@@ -221,7 +203,15 @@ export const ContactLayout = () => {
               </p>
             </div>
 
-            <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
+            <form
+              className="flex flex-col gap-6"
+              action="https://formspree.io/f/mwvdbyrg"
+              method="POST"
+            >
+              {/* Formspree configurations */}
+              <input type="hidden" name="_subject" value="New Client Inquiry — Metabrix AI" />
+              <input type="hidden" name="_next" value="https://metabrixai.in/thank-you" />
+
               {/* Grid Layout Inputs */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2 text-left">
@@ -231,6 +221,7 @@ export const ContactLayout = () => {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     required
                     value={formData.name}
                     onChange={handleChange}
@@ -245,6 +236,7 @@ export const ContactLayout = () => {
                   <input
                     type="text"
                     id="businessName"
+                    name="businessName"
                     value={formData.businessName}
                     onChange={handleChange}
                     placeholder="e.g. Metabrix AI"
@@ -261,6 +253,7 @@ export const ContactLayout = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     required
                     value={formData.email}
                     onChange={handleChange}
@@ -275,6 +268,7 @@ export const ContactLayout = () => {
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="e.g. +91 8169054938"
@@ -289,6 +283,7 @@ export const ContactLayout = () => {
                 </label>
                 <select
                   id="projectType"
+                  name="projectType"
                   required
                   value={formData.projectType}
                   onChange={handleChange}
@@ -309,6 +304,7 @@ export const ContactLayout = () => {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={5}
                   value={formData.message}
@@ -317,17 +313,6 @@ export const ContactLayout = () => {
                   className="w-full bg-brand-dark/50 border border-white/10 focus:border-brand-gold/50 focus:ring-1 focus:ring-brand-gold/50 rounded-xl px-4 py-3 text-xs sm:text-sm text-white placeholder-muted-foreground/50 outline-none transition-all duration-300 resize-none"
                 />
               </div>
-
-              {/* Submission Alerts */}
-              {isSubmitted && (
-                <div className="bg-brand-gold/10 border border-brand-gold/20 p-4 rounded-xl text-left flex items-start gap-3 text-brand-gold animate-fade-in">
-                  <Sparkles className="h-4 w-4 shrink-0 mt-0.5" />
-                  <div className="text-xs leading-normal">
-                    <span className="font-semibold block uppercase tracking-wider mb-0.5">Message Sent</span>
-                    Thank you! Our engineering team will review your scope and follow up within 12 hours.
-                  </div>
-                </div>
-              )}
 
               <Button variant="primary" type="submit" className="w-full py-4 group shadow-[0_0_15px_rgba(212,175,55,0.2)]">
                 Submit Request
