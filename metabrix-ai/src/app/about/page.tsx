@@ -5,7 +5,7 @@ import { AboutSections } from "@/components/sections/AboutSections";
 
 export const metadata: Metadata = {
   title: "About Us | Custom Next.js & AI Web Engineering",
-  description: "Learn about Metabrix AI—a boutique digital agency based in Mumbai, India. Discover our philosophy, bespoke engineering methodology, and premium team.",
+  description: "Learn about Metabrix AI—a boutique digital agency based in Mumbai, India. Discover our philosophy, custom engineering methodology, and premium team.",
 };
 
 export default function AboutPage() {

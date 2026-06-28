@@ -88,7 +88,7 @@ export const Navbar = () => {
         <div className="hidden md:block">
           <Link href="/contact">
             <Button variant="glass" size="sm" className="group text-xs tracking-wider uppercase font-semibold">
-              Book a Consultation
+              Get a free website plan
               <ArrowUpRight className="ml-1.5 h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 text-brand-gold" />
             </Button>
           </Link>
@@ -147,12 +147,12 @@ export const Navbar = () => {
         <div className="flex flex-col gap-6">
           <Link href="/contact" className="w-full">
             <Button variant="primary" className="w-full justify-center group text-sm tracking-wider uppercase font-semibold py-3">
-              Book a Consultation
+              Get a free website plan
               <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300 text-brand-dark" />
             </Button>
           </Link>
           <div className="text-center text-xs tracking-widest uppercase text-muted-foreground/60">
-            © 2026 Metabrix AI. Luxury Web Design.
+            © 2026 Metabrix AI. Professional Web Design.
           </div>
         </div>
       </div>

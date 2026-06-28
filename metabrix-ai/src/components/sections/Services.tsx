@@ -62,7 +62,7 @@ export const Services = () => {
               </Badge>
             </div>
             <h2 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight font-sans">
-              Bespoke Services for <span className="font-serif italic text-brand-gold font-normal">Modern Platforms</span>
+              Custom Services for <span className="font-serif italic text-brand-gold font-normal">Modern Platforms</span>
             </h2>
           </div>
           <p className="flex-1 text-xs sm:text-sm text-muted-foreground/80 leading-relaxed max-w-md uppercase tracking-wider font-light md:mb-1">

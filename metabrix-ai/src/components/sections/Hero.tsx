@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Sparkles, Zap, Smartphone, Search, Target, Cpu, ShieldCheck } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, Smartphone, Search, Target, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 
@@ -26,7 +26,7 @@ export const Hero = () => {
             <div>
               <Badge variant="primary" className="border-brand-gold/30 bg-brand-gold/5 py-1.5 px-4 rounded-full flex items-center gap-2 tracking-widest text-[10px] text-brand-gold">
                 <Sparkles className="h-3.5 w-3.5 text-brand-gold animate-pulse" />
-                <span>Bespoke Digital Design & Dev</span>
+                <span>Custom Digital Design & Dev</span>
               </Badge>
             </div>
 
@@ -77,7 +77,7 @@ export const Hero = () => {
                 <div className="w-2.5 h-2.5 rounded-full bg-[#D4AF37]/40" />
                 <div className="w-2.5 h-2.5 rounded-full bg-[#D4AF37]/20" />
                 <div className="flex-1 mx-4 bg-brand-dark/60 border border-brand-gold/5 rounded-md px-3 py-0.5 text-[9px] text-muted-foreground/60 flex items-center justify-between">
-                  <span className="truncate">metabrix.ai/portfolio/aurum-estate</span>
+                  <span className="truncate">metabrixai.in/portfolio/aurum-estate</span>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ export const Hero = () => {
                 <div className="flex flex-col gap-2 relative z-10 mt-1">
                   <span className="text-[7px] uppercase tracking-widest text-[#B08D57]">Exquisite Living</span>
                   <h3 className="font-serif text-base sm:text-lg text-white font-light leading-snug">
-                    Bespoke Residences <br />
+                    Custom Residences <br />
                     <span className="italic text-brand-gold">Designed for the Few</span>
                   </h3>
                 </div>

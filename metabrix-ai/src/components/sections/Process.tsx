@@ -14,7 +14,7 @@ const steps = [
   },
   {
     phase: "Phase 02",
-    title: "Bespoke Visual Design",
+    title: "Custom Visual Design",
     subtitle: "Interface Layout",
     description: "Designing distinct page mockups focused on clean typography, intuitive user flows, and brand styling tailored to your business.",
   },

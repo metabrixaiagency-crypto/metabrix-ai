@@ -10,7 +10,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
   title: "AI-Powered Websites Built to Grow Your Business",
-  description: "Bespoke digital design and Next.js engineering for premium brands. We create fast, custom websites with practical AI integrations to generate more leads.",
+  description: "Custom digital design and Next.js engineering for premium brands. We create fast, custom websites with practical AI integrations to generate more leads.",
 };
 
 export default function Home() {

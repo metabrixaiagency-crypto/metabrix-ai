@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Award,
     number: "01",
-    title: "Bespoke Creative Design",
+    title: "Custom Creative Design",
     description: "Every layout is custom-tailored to represent your business. We avoid generic templates, designing distinct user interfaces that match your brand identity.",
   },
   {
@@ -51,7 +51,7 @@ export const WhyChooseUs = () => {
         <div className="flex-1 flex flex-col gap-6 text-left lg:sticky lg:top-32">
           <div>
             <Badge variant="primary" className="border-brand-gold/30 bg-brand-gold/5 text-brand-gold text-[9px] tracking-widest px-3 py-1">
-              Bespoke Philosophy
+              Custom Philosophy
             </Badge>
           </div>
           

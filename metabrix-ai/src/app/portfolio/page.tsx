@@ -19,15 +19,15 @@ export default function PortfolioPage() {
         <div className="max-w-4xl mx-auto flex flex-col items-center gap-6 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-brand-gold/25 text-[10px] text-brand-gold uppercase tracking-widest font-semibold">
             <Briefcase className="h-3.5 w-3.5 text-brand-gold" />
-            <span>Showcase</span>
+            <span>Industries We Serve</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-light tracking-tight text-white leading-tight font-sans">
-            Selected Works & <span className="font-serif italic text-brand-gold font-normal">Case Studies</span>
+            Built for Local <span className="font-serif italic text-brand-gold font-normal">Businesses Like Yours</span>
           </h1>
 
           <p className="text-xs sm:text-sm text-muted-foreground/80 max-w-xl leading-relaxed uppercase tracking-wider font-light">
-            A curated gallery of business websites, automated support platforms, and high-performance custom applications.
+            We build professional, AI-powered websites for Mumbai&apos;s local businesses &mdash; helping them get found online, generate leads, and grow.
           </p>
         </div>
       </section>

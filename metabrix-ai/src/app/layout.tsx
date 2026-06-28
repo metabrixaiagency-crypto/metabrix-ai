@@ -27,12 +27,12 @@ export const metadata: Metadata = {
     template: "%s | Metabrix AI",
   },
   description:
-    "Metabrix AI designs and develops elite, Next.js websites powered by autonomous agent intelligence. Elevate your brand with our luxury dark-themed digital experiences.",
+    "Metabrix AI designs and develops custom, Next.js websites powered by AI-powered features. Elevate your brand with our professional dark-themed digital experiences.",
   keywords: [
     "AI Web Design",
     "Next.js Agency",
     "Premium Web Development",
-    "Luxury SaaS Design",
+    "Professional SaaS Design",
     "Autonomous Agents",
     "AI Integration",
     "Metabrix AI",
@@ -42,17 +42,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://metabrix.ai",
+    url: "https://metabrixai.in",
     title: "Metabrix AI | Premium AI Website Development Agency",
     description:
-      "Metabrix AI designs and develops elite, Next.js websites powered by autonomous agent intelligence. Elevate your brand with our luxury dark-themed digital experiences.",
+      "Metabrix AI designs and develops custom, Next.js websites powered by AI-powered features. Elevate your brand with our professional dark-themed digital experiences.",
     siteName: "Metabrix AI",
   },
   twitter: {
     card: "summary_large_image",
     title: "Metabrix AI | Premium AI Website Development Agency",
     description:
-      "Metabrix AI designs and develops elite, Next.js websites powered by autonomous agent intelligence. Elevate your brand with our luxury dark-themed digital experiences.",
+      "Metabrix AI designs and develops custom, Next.js websites powered by AI-powered features. Elevate your brand with our professional dark-themed digital experiences.",
   },
   robots: {
     index: true,
