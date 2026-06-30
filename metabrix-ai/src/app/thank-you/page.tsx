@@ -7,6 +7,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Thank You | Metabrix AI",
   description: "Thank you for reaching out to Metabrix AI. We will get back to you within 24 hours.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ThankYouPage() {

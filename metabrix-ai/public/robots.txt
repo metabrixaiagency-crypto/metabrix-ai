@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow indexing of redirect and administrative pages
+Disallow: /thank-you
+
+# Host and Sitemap locations
+Host: https://metabrixai.in
+Sitemap: https://metabrixai.in/sitemap.xml
